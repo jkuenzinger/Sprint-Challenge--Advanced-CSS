@@ -1,1 +1,25 @@
 // Mixins Here
+.flex() {
+    display:flex;
+    flex-wrap:wrap;
+}
+.margin(){
+    margin-right:2.5%;
+    margin-left:2.5%;
+}
+//parametric mixin
+.signmeupbutton(@bg-colour:#22283A, @width:35%,@font-colour: white){
+    background-color:@bg-colour;
+    width: @width;
+    height:40px;
+    font-size: 2rem;
+    border-radius:10px;
+    color:@font-colour;
+    text-align:center;
+    padding-top:10px;
+    &:hover{
+        background-color: white;
+        color:black;
+    }
+    
+ }
